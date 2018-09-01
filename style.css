@@ -16,3 +16,9 @@ body {
 	font-size: 3em;
 	text-align: center;
 }
+.main {
+	padding: 1em;
+}
+.description {
+	text-align: center;
+}
