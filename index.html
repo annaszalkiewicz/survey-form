@@ -23,19 +23,32 @@
 		</p>
 		<form id="survey-form">
 
-			<div class="form-parts">
+			<div class="row">
 					<label for="name" id="name-label">Your name*</label>
 					<input type="text" name="name" id="name" placeholder="Write your email" required>
 			</div>
 
-			<div class="form-parts">
+			<div class="row">
 					<label for="email" id="email-label">Your email*</label>
 					<input type="email" name="email" id="email" placeholder="Write your email" required>
 			</div>
 
-			<div class="form-parts">
+			<div class="row">
 				<label for="number" id="number-label">Your age:</label>
 				<input type="number" name="number" id="number" min="0" max="130" placeholder="Your age">
+			</div>
+
+			<div class="row">
+				<label for="dropdown">Which option best describes your current role?</label>
+				<select name="dropdown" id="dropdown">
+					<option value="" disabled>Select an option</option>
+					<option value="student">Student</option>
+					<option value="full-time">Full-time job</option>
+					<option value="part-time">Part-time job</option>
+					<option value="unemployed">Unemployed</option>
+					<option value="no-answer">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
 			</div>
 			
 		</form>
