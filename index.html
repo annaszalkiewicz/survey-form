@@ -24,13 +24,13 @@
 		<form id="survey-form">
 
 			<div class="row">
-					<label for="name" id="name-label">Your name*</label>
-					<input type="text" name="name" id="name" placeholder="Write your email" required>
+				<label for="name" id="name-label">Your name*</label>
+				<input type="text" name="name" id="name" placeholder="Write your email" required>
 			</div>
 
 			<div class="row">
-					<label for="email" id="email-label">Your email*</label>
-					<input type="email" name="email" id="email" placeholder="Write your email" required>
+				<label for="email" id="email-label">Your email*</label>
+				<input type="email" name="email" id="email" placeholder="Write your email" required>
 			</div>
 
 			<div class="row">
@@ -50,7 +50,20 @@
 					<option value="other">Other</option>
 				</select>
 			</div>
-			
+
+			<fieldset class="row">
+				<legend>How likely is that you would recommend freeCodeCamp to a friend?</legend>
+
+				<label for="definitely">Definitely</label>
+				<input type="radio" name="recommend" id="definitely" value="definitely">
+				<label for="maybe">Maybe</label>
+				<input type="radio" name="recommend" id="maybe" value="maybe">
+				<label for="not-sure">Not sure</label>
+				<input type="radio" name="recommend" id="not-sure" value="not-sure">
+				<label for="no">No</label>
+				<input type="radio" name="recommend" id="no" value="no">
+			</fieldset>
+
 		</form>
 	</main>
 
