@@ -10,10 +10,12 @@ body {
 }
 .header {
 	padding: 1.5em;
-	border-bottom: solid 3px #000;
+	background-image: linear-gradient(45deg, #005200, #337533);
+	color: #fff;
+	box-shadow: 0 10px 20px #aaa;
 }
 .title {
-	font-size: 3em;
+	font-size: 2em;
 	text-align: center;
 }
 .main {
@@ -21,4 +23,76 @@ body {
 }
 .description {
 	text-align: center;
+	padding: 1.5em;
+	border-bottom: solid 1px #aaa;
+}
+.row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1em;
+}
+input, fieldset, select {
+	padding: 1em;
+	border-radius: 5px;
+	border: solid 1px #005200;
+}
+fieldset {
+	border: none;
+}
+.radio-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.radio-label {
+	width: 30%;
+}
+.radio-input {
+	width: 50%;
+}
+.checkbox-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+::placeholder {
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+}
+.main {
+	width: 95%;
+	margin: 1em auto;
+	box-shadow: 0 0 20px #aaa;
+}
+#survey-form > div:nth-child(1) {
+	margin-top: 0.5em;
+}
+.textarea {
+	margin-top: 1em;
+}
+button {
+	padding: 1em 2em;
+	background-color: #005200;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	margin: 0 auto;
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	box-shadow: 0 0 20px #aaa;
+}
+.footer {
+	padding: 1.5em;
+	background-image: linear-gradient(45deg, #005200, #337533);
+	color: #fff;
+}
+.copyright {
+	text-align: center;
+}
+.copyright a {
+	text-decoration: none;
+	color: #fff;
 }
