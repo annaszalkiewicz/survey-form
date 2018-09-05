@@ -9,7 +9,7 @@ body {
 	color: #000;
 }
 .header {
-	padding: 1.5em;
+	padding: 2em;
 	background-image: linear-gradient(45deg, #005200, #337533);
 	color: #fff;
 	box-shadow: 0 10px 20px #aaa;
@@ -32,10 +32,17 @@ body {
 	justify-content: center;
 	padding: 1em;
 }
+label {
+	margin-bottom: 0.5em;
+}
 input, fieldset, select {
 	padding: 1em;
 	border-radius: 5px;
 	border: solid 1px #005200;
+}
+input:focus, select:focus, textarea:focus {
+	border: solid 2px orangered !important;
+	outline: none;
 }
 fieldset {
 	border: none;
@@ -48,8 +55,9 @@ fieldset {
 .radio-label {
 	width: 30%;
 }
-.radio-input {
-	width: 50%;
+input[type="radio"]:focus, input[type="checkbox"]:focus {
+	background: orangered;
+	outline: solid 2px orangered;
 }
 .checkbox-group {
 	display: flex;
@@ -65,6 +73,7 @@ fieldset {
 	width: 95%;
 	margin: 1em auto;
 	box-shadow: 0 0 20px #aaa;
+	background-color: #f8f8f8;
 }
 #survey-form > div:nth-child(1) {
 	margin-top: 0.5em;
@@ -82,7 +91,20 @@ button {
 	display: block;
 	font-size: 1.5em;
 	font-weight: bold;
-	box-shadow: 0 0 20px #aaa;
+	box-shadow: 0 0 20px #3e3e3e;
+	margin: 1em auto;
+}
+button:hover {
+	background-color: #337533;
+	box-shadow: 0 0 5px #3e3e3e;
+	transition: all 1s ease;
+}
+button:focus {
+	background-color: #337533;
+	box-shadow: 0 0 5px #3e3e3e;
+	transition: all 1s ease;
+	border: solid 2px orangered;
+	outline: none;
 }
 .footer {
 	padding: 1.5em;
@@ -95,4 +117,11 @@ button {
 .copyright a {
 	text-decoration: none;
 	color: #fff;
+}
+.copyright a:hover {
+	color: yellow;
+}
+.copyright a:focus {
+	color: orangered;
+	outline: none;
 }
