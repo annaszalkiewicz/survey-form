@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>Survey Form</title>
 </head>
@@ -65,91 +66,95 @@
 
 			</div>
 
-			<fieldset class="row">
+			<div class="row">
 				<legend>How likely is that you would recommend freeCodeCamp to a friend?</legend>
 
-				<div class="radio-group">
-					<label for="definitely" class="radio-label">Definitely</label>
-					<input type="radio" name="recommend" id="definitely" value="definitely" class="radio-input">
+				<div class="radios">
+					<div class="radio-group">
+						<label for="definitely" class="radio-label">Definitely</label>
+						<input type="radio" name="recommend" id="definitely" value="definitely" class="radio-input">
+					</div>
+
+					<div class="radio-group">
+						<label for="maybe" class="radio-label">Maybe</label>
+						<input type="radio" name="recommend" id="maybe" value="maybe" class="radio-input">
+					</div>
+
+					<div class="radio-group">
+						<label for="not-sure" class="radio-label">Not sure</label>
+						<input type="radio" name="recommend" id="not-sure" value="not-sure" class="radio-input">
+					</div>
+
+					<div class="radio-group">
+						<label for="no" class="radio-label">No</label>
+						<input type="radio" name="recommend" id="no" value="no" class="radio-input">
+					</div>
 				</div>
 
-				<div class="radio-group">
-					<label for="maybe" class="radio-label">Maybe</label>
-					<input type="radio" name="recommend" id="maybe" value="maybe" class="radio-input">
-				</div>
+			</div>
 
-				<div class="radio-group">
-					<label for="not-sure" class="radio-label">Not sure</label>
-					<input type="radio" name="recommend" id="not-sure" value="not-sure" class="radio-input">
-				</div>
-
-				<div class="radio-group">
-					<label for="no" class="radio-label">No</label>
-					<input type="radio" name="recommend" id="no" value="no" class="radio-input">
-				</div>
-
-			</fieldset>
-
-			<fieldset class="row">
+			<div class="row">
 
 				<legend>Things that should be improved in the future (Check all that apply):</legend>
 
-				<div class="checkbox-group">
-					<label for="front-end">Front-End Projects</label>
-					<input type="checkbox" name="checkbox" id="front-end" value="front-end" class="input-checkbox">
+				<div class="checkboxes">
+					<div class="checkbox-group">
+						<label for="front-end" class="checkbox-label">Front-End Projects</label>
+						<input type="checkbox" name="checkbox" id="front-end" value="front-end" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="back-end" class="checkbox-label">Back-End Projects</label>
+						<input type="checkbox" name="checkbox" id="back-end" value="back-end" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="data" class="checkbox-label">Data Vizualization</label>
+						<input type="checkbox" name="checkbox" id="data" value="data" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="challenges" class="checkbox-label">Challenges</label>
+						<input type="checkbox" name="checkbox" id="challenges" value="challenges" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="community" class="checkbox-label">Open Source Community</label>
+						<input type="checkbox" name="checkbox" id="community" value="community" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="help" class="checkbox-label">Gitter Help Rooms</label>
+						<input type="checkbox" name="checkbox" id="help" value="help" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="videos" class="checkbox-label">Videos</label>
+						<input type="checkbox" name="checkbox" id="videos" value="videos" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="meetups" class="checkbox-label">City Meetups</label>
+						<input type="checkbox" name="checkbox" id="meetups" value="meetups" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="wiki" class="checkbox-label">Wiki</label>
+						<input type="checkbox" name="checkbox" id="wiki" value="wiki" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="forum" class="checkbox-label">Forum</label>
+						<input type="checkbox" name="checkbox" id="forum" value="forum" class="input-checkbox">
+					</div>
+
+					<div class="checkbox-group">
+						<label for="courses" class="checkbox-label">Additional Courses</label>
+						<input type="checkbox" name="checkbox" id="courses" value="courses" class="input-checkbox">
+					</div>
 				</div>
 
-				<div class="checkbox-group">
-					<label for="back-end">Back-End Projects</label>
-					<input type="checkbox" name="checkbox" id="back-end" value="back-end" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="data">Data Vizualization</label>
-					<input type="checkbox" name="checkbox" id="data" value="data" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="challenges">Challenges</label>
-					<input type="checkbox" name="checkbox" id="challenges" value="challenges" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="community">Open Source Community</label>
-					<input type="checkbox" name="checkbox" id="community" value="community" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="help">Gitter Help Rooms</label>
-					<input type="checkbox" name="checkbox" id="help" value="help" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="videos">Videos</label>
-					<input type="checkbox" name="checkbox" id="videos" value="videos" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="meetups">City Meetups</label>
-					<input type="checkbox" name="checkbox" id="meetups" value="meetups" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="wiki">Wiki</label>
-					<input type="checkbox" name="checkbox" id="wiki" value="wiki" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="forum">Forum</label>
-					<input type="checkbox" name="checkbox" id="forum" value="forum" class="input-checkbox">
-				</div>
-
-				<div class="checkbox-group">
-					<label for="courses">Additional Courses</label>
-					<input type="checkbox" name="checkbox" id="courses" value="courses" class="input-checkbox">
-				</div>
-
-			</fieldset>
+			</div>
 
 			<div class="row">
 

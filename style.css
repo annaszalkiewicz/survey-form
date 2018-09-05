@@ -35,7 +35,7 @@ body {
 label {
 	margin-bottom: 0.5em;
 }
-input, fieldset, select {
+input, fieldset, select, textarea {
 	padding: 1em;
 	border-radius: 5px;
 	border: solid 1px #005200;
@@ -124,4 +124,41 @@ button:focus {
 .copyright a:focus {
 	color: orangered;
 	outline: none;
+}
+@media screen and (min-width: 600px) {
+	.header {
+		padding: 3em;
+	}
+	.description {
+		padding: 3em;
+	}
+	.row {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	label, legend { 
+		width: 50%;
+		text-align: right;
+		margin-right: 1em;
+	}
+	input, select, .radios, textarea {
+		width: 50%;
+	}
+	.input-checkbox { 
+		width: 20%;
+	}
+	.radio-group, .checkbox-group {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	.radio-input {
+    width: 20%;
+	}
+	.radio-label, .checkbox-label {
+		text-align: left;
+		width: 80%;
+	}
+	.checkboxes {
+		width: 50%;
+	}
 }
